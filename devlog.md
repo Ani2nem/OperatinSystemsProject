@@ -46,4 +46,18 @@
 4. Do the documentation for it
 
 ## Session Progress
-[We'll fill this as we work]
+- Password setting works smoothly
+- Properly warns about missing passwords
+- Vigenère encryption/decryption is solid
+- Handles all commands and formats responses per spec
+
+Still need to do:
+1. Need to build the driver program and it needs to, handle both logger and encryption programs, deal with user interactions, keep track of string history
+2. Should test some edge cases (super long strings, weird inputs, etc.)
+3. Make sure the pipe communication works perfectly between everything
+
+
+
+
+
+
