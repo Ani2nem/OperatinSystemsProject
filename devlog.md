@@ -27,4 +27,23 @@
 
 
 
+# Feb 18th 2025 - 10:00 am
 
+## Thoughts so far
+- Logger is done and we now need to do the Encryption program
+- Encryption nees to use Vigenère cipher
+- Encryption program needs to handle the commands like PASS, ENCRYPT, DECRYPT, and QUIT
+- All encryption/decryption should be case insensitive
+- Also need to ensure proper error handling for cases when password isn't set
+
+## Plan for this session
+1. Learn about Vigenère cipher implementation
+2. Start implementing the encryption program with the following features:
+   - First we need to do command parsing (PASS, ENCRYPT, DECRYPT, QUIT)
+   - Second we need to do the basic input/output handling
+   - Finally we can get error handling for missing password
+3. Create basic test cases for the encryption program
+4. Do the documentation for it
+
+## Session Progress
+[We'll fill this as we work]
