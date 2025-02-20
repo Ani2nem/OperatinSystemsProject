@@ -61,3 +61,38 @@ Still need to do:
 
 
 
+# Feb 20th 2025 - 9:00 am
+
+## Thoughts so fars
+- The Logger is done and its working well now
+- The Encryption code is done is working fine as of now
+- We might need to optimize and recheck this code, but let' start on Driver Program
+- Driver program should accept a single command line argument, it will run two NEW processes
+- It is the program that brings everything together, we have to use the logger and the encryption programs we built before.
+- Need to learn how to do the streams and what pipes are and how to use them in python.
+- Our Driver should print a menu of commands and prompt the user
+for commands – looping until the quit command is received.
+- Every command and its result should be logged too.
+-All strings entered to be encrypted or decrypted should be saved in a history
+that lasts only for this run.
+- The driver program should accept:
+   - password - Logger
+   - encrypt - Logger
+   - decrypt - Logger
+   - history - IDK (Show the history)
+   - quit - Logger
+
+## Plan for this session
+1. Learn about creating new process and what streams are and how to use them in Python.
+2. Create and start the implementation for Driver Program:
+   - Look above in the thoughts for the reqs. 
+3. Try and test the code and check if its valid. 
+4. Troubleshoot any integration between program (we might need to fix some encryption and logger code).
+5. Once fixed, do another layer of testing to ensure everything is working properly together. (do it unit testing  and integration testing style so we don't miss any cases).
+6. Record the progress as you go.
+7. Check and ensure it's following and completing all project reqs.
+7. Hopefully, get it turned in this session.
+
+
+## Session Progress
+
