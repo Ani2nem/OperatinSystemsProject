@@ -96,3 +96,5 @@ that lasts only for this run.
 
 ## Session Progress
 
+I was not able to make any progress that day, just started learning about creating a new processes and streams in python
+
