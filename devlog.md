@@ -98,3 +98,23 @@ that lasts only for this run.
 
 I was not able to make any progress that day, just started learning about creating a new processes and streams in python
 
+
+
+
+# March tth 2025 - 11:00 am
+
+## Thoughts so fars
+- They are on the previous session plans, just follow them
+
+## Plan for this session (from last time)
+1. Review the concepts about creating new process and what streams are and how to use them in Python.
+2. Create and start the implementation for Driver Program:
+   - Look above in the thoughts for the reqs. 
+3. Try and test the code and check if its valid. 
+4. Troubleshoot any integration between program (we might need to fix some encryption and logger code).
+5. Once fixed, do another layer of testing to ensure everything is working properly together. (do it unit testing  and integration testing style so we don't miss any cases).
+6. Record the progress as you go.
+7. Check and ensure it's following and completing all project reqs.
+7. Hopefully, get it turned in this session.
+
+
