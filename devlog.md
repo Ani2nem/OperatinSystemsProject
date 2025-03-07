@@ -117,4 +117,11 @@ I was not able to make any progress that day, just started learning about creati
 7. Check and ensure it's following and completing all project reqs.
 7. Hopefully, get it turned in this session.
 
+# Learning as I was coding
+We can use enumarate to traverse 2 objects in python!
+Note to the grader, my mac uses the Python3 commmand and to run on your machine you might have to change it to python (line52 and line55 in driver.py)
+My encrpyt is working but the decrypt is giving me a hard time, it's encrypting again, doing a double encrypt
+I need to research this problem and I will come back, I'll commit  before I do that
+
+
 

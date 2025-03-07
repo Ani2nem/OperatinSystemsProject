@@ -1,0 +1,25 @@
+2025-03-07 11:19 [START] Logging Started.
+2025-03-07 11:19 [START] Driver program started.
+2025-03-07 11:19 [COMMAND] User entered 'quit' command.
+2025-03-07 11:19 [COMMAND] Sending QUIT to encryption program.
+2025-03-07 11:19 [COMMAND] Sending QUIT to logger.
+2025-03-07 11:19 [STOP] Logging Stopped.
+2025-03-07 11:20 [START] Logging Started.
+2025-03-07 11:20 [START] Driver program started.
+2025-03-07 11:20 [COMMAND] User entered 'clear' command.
+2025-03-07 11:20 [ERROR] Unknown command 'clear'.
+2025-03-07 11:20 [STOP] Logging Stopped.
+2025-03-07 11:20 [START] Logging Started.
+2025-03-07 11:20 [START] Driver program started.
+2025-03-07 11:21 [COMMAND] User entered 'password' command.
+2025-03-07 11:21 [ERROR] > RESULT
+2025-03-07 11:22 [COMMAND] User entered 'encrypt' command.
+2025-03-07 11:22 [ERROR] > RESULT RIJVS
+2025-03-07 11:22 [COMMAND] User entered 'history' command.
+2025-03-07 11:22 [COMMAND] Displayed command history.
+2025-03-07 11:22 [COMMAND] User entered 'decrypt' command.
+2025-03-07 11:24 [ERROR] > RESULT XANBK
+2025-03-07 11:24 [COMMAND] User entered 'quit' command.
+2025-03-07 11:24 [COMMAND] Sending QUIT to encryption program.
+2025-03-07 11:24 [COMMAND] Sending QUIT to logger.
+2025-03-07 11:24 [STOP] Logging Stopped.
