@@ -101,7 +101,7 @@ I was not able to make any progress that day, just started learning about creati
 
 
 
-# March tth 2025 - 11:00 am
+# March 7th 2025 - 11:00 am
 
 ## Thoughts so fars
 - They are on the previous session plans, just follow them
@@ -122,6 +122,38 @@ We can use enumarate to traverse 2 objects in python!
 Note to the grader, my mac uses the Python3 commmand and to run on your machine you might have to change it to python (line52 and line55 in driver.py)
 My encrpyt is working but the decrypt is giving me a hard time, it's encrypting again, doing a double encrypt
 I need to research this problem and I will come back, I'll commit  before I do that
+Never mind that was not an issue, I was tweaking
+Nope I was not tweaking, it is an issue with decrypt
+It was doing that because of the > char.
+I don't want to change encryption, so i handled it here.
+Added a new parse_encryption_response() function that removes the '>' character from encryption responses
+for_decrypt parameter to the get_history_choice() function that shows helpful tips when selecting items for decryption
 
 
+
+## Session Progress
+1. Ran final tests on the program with different inputs:
+- Verified password setting works correctly
+- Tested encryption/decryption with various strings
+- Confirmed history feature works as expected
+- Checked error handling for invalid inputs
+
+
+2. Created comprehensive README.md with:
+- File descriptions and roles
+- Running instructions
+- Note about python3 vs python command
+- Command guide and usage notes
+
+
+3. Fixed a few minor issues:
+- Improved error handling
+- Enhanced user feedback for decrypt operations
+
+
+4. Verified that all project requirements are met:
+- Logger formats timestamps correctly
+- Encryption implements Vigenère cipher properly
+- Driver handles user interaction and history
+- All components communicate via pipes
 

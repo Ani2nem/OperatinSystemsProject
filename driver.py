@@ -13,9 +13,13 @@ def print_menu():
     print("  quit     - Exit the program")
 
 
-def get_history_choice(history):
-    """Display history and get user choice."""
-
+def get_history_choice(history, for_decrypt=False):
+    """Display history and get user choice.
+    
+    Args:
+        history: List of history items
+        for_decrypt: If True, displays hint for decryption
+    """
     # base case if there is no history
     if not history:
         print("History is empty.")
@@ -25,6 +29,9 @@ def get_history_choice(history):
     # we can use enumarate to traverse 2 objects in python
     for i, item in enumerate(history, 1):
         print(f"{i}. {item}")
+    
+    if for_decrypt:
+        print("\nTip: For decryption, you should select an encrypted item from history")
     
     while True:
         choice = input("\nEnter number to select from history, or 'n' for new input: ").strip().lower()
@@ -40,6 +47,18 @@ def get_history_choice(history):
             print("Invalid input. Please enter a number or 'n'.")
 
 
+def parse_encryption_response(response):
+    """Clean up the response from the encryption program.
+    
+    Removed the '>' character in the response, I didn't want to change encryption, so i handled it here.
+    """
+    response = response.strip()
+    if response.startswith('>'):
+        response = response[1:].strip()
+    
+    return response
+
+
 def main():
     # Check command line argument, only the log file
     if len(sys.argv) != 2:
@@ -48,18 +67,21 @@ def main():
     
     log_file = sys.argv[1]
     
-    # Start tjej logger process
+    # Start the logger process
     logger = Popen(['python3', 'logger.py', log_file], stdin=PIPE, encoding='utf8')
     
     # Start the encryption process
     encryption = Popen(['python3', 'encryption.py'], stdin=PIPE, stdout=PIPE, encoding='utf8')
     
-    # Log driver program startex
+    # Log driver program started
     logger.stdin.write("START Driver program started.\n")
     logger.stdin.flush()
     
     # Keep track of history in a list
     history = []
+    # Track last encrypted/decrypted item for context
+    last_encrypted = None
+    last_decrypted = None
     
     print("Welcome to the Encryption System!")
     print_menu()
@@ -101,7 +123,7 @@ def main():
             encryption.stdin.flush()
             
             # read the response from the encryption program
-            response = encryption.stdout.readline().strip()
+            response = parse_encryption_response(encryption.stdout.readline().strip())
             
             if response == "RESULT":
                 print("Password set successfully.")
@@ -136,8 +158,8 @@ def main():
             encryption.stdin.write(f"ENCRYPT {text}\n")
             encryption.stdin.flush()
             
-            # Get the response response
-            response = encryption.stdout.readline().strip()
+            # Get the response
+            response = parse_encryption_response(encryption.stdout.readline().strip())
             
             print(response)
             
@@ -145,7 +167,10 @@ def main():
             if response.startswith("RESULT"):
                 result = response.split(maxsplit=1)[1]
                 history.append(result)
+                last_encrypted = result
                 logger.stdin.write(f"RESULT Encrypted '{text}' to '{result}'.\n")
+                # Suggest decryption
+                print(f"You can now decrypt '{result}' to get back '{text}'.")
             else:
                 logger.stdin.write(f"ERROR {response}\n")
             
@@ -153,7 +178,12 @@ def main():
             
         elif command == "decrypt":
             # Handle the decryption
-            choice = get_history_choice(history)
+            print("For decryption, you should select an encrypted text (like the result of a previous encryption).")
+            
+            if last_encrypted:
+                print(f"Tip: Your last encrypted result was '{last_encrypted}'")
+                
+            choice = get_history_choice(history, for_decrypt=True)
             
             if choice is None:
                 text = input("Enter text to decrypt (letters only): ").strip()
@@ -176,7 +206,7 @@ def main():
             encryption.stdin.flush()
             
             # Get response
-            response = encryption.stdout.readline().strip()
+            response = parse_encryption_response(encryption.stdout.readline().strip())
             
             print(response)
             
@@ -184,6 +214,7 @@ def main():
             if response.startswith("RESULT"):
                 result = response.split(maxsplit=1)[1]
                 history.append(result)
+                last_decrypted = result
                 logger.stdin.write(f"RESULT Decrypted '{text}' to '{result}'.\n")
             else:
                 logger.stdin.write(f"ERROR {response}\n")

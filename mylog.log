@@ -23,3 +23,33 @@
 2025-03-07 11:24 [COMMAND] Sending QUIT to encryption program.
 2025-03-07 11:24 [COMMAND] Sending QUIT to logger.
 2025-03-07 11:24 [STOP] Logging Stopped.
+2025-03-07 12:19 [START] Logging Started.
+2025-03-07 12:19 [START] Driver program started.
+2025-03-07 12:19 [COMMAND] User entered 'secret' command.
+2025-03-07 12:19 [ERROR] Unknown command 'secret'.
+2025-03-07 12:19 [COMMAND] User entered 'key' command.
+2025-03-07 12:19 [ERROR] Unknown command 'key'.
+2025-03-07 12:19 [COMMAND] User entered 'password' command.
+2025-03-07 12:19 [ERROR] > RESULT
+2025-03-07 12:20 [COMMAND] User entered 'encrypt' command.
+2025-03-07 12:20 [ERROR] > RESULT ZINCS
+2025-03-07 12:20 [COMMAND] User entered 'decrypt' command.
+2025-03-07 12:21 [ERROR] > RESULT PAJUK
+2025-03-07 12:21 [COMMAND] User entered 'quit' command.
+2025-03-07 12:21 [COMMAND] Sending QUIT to encryption program.
+2025-03-07 12:21 [COMMAND] Sending QUIT to logger.
+2025-03-07 12:21 [STOP] Logging Stopped.
+2025-03-07 12:25 [START] Logging Started.
+2025-03-07 12:25 [START] Driver program started.
+2025-03-07 12:25 [COMMAND] User entered 'password' command.
+2025-03-07 12:25 [RESULT] Password set successfully.
+2025-03-07 12:26 [COMMAND] User entered 'encrypt' command.
+2025-03-07 12:26 [RESULT] Encrypted 'HELLO' to 'ZINCS'.
+2025-03-07 12:26 [COMMAND] User entered 'decrypt' command.
+2025-03-07 12:26 [RESULT] Decrypted 'ZINCS' to 'HELLO'.
+2025-03-07 12:26 [COMMAND] User entered 'decrypt' command.
+2025-03-07 12:26 [RESULT] Decrypted 'HELLO' to 'PAJUK'.
+2025-03-07 12:27 [COMMAND] User entered 'quit' command.
+2025-03-07 12:27 [COMMAND] Sending QUIT to encryption program.
+2025-03-07 12:27 [COMMAND] Sending QUIT to logger.
+2025-03-07 12:27 [STOP] Logging Stopped.
