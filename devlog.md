@@ -157,3 +157,15 @@ for_decrypt parameter to the get_history_choice() function that shows helpful ti
 - Driver handles user interaction and history
 - All components communicate via pipes
 
+
+# March 12th 2025 - 1:00 pm
+
+## Thoughts so fars
+The Project due date got pushed back but I will complete it now anyway.
+Need to do a final check on the code and and the assignment, been a while since I opened this up.
+
+## Plan for this session
+Check the assignment instructions and turn in the assignment
+
+
+## Session Progress
