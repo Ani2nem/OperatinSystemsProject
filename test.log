@@ -3,3 +3,24 @@
 2025-02-18 13:01 [INFO] This is a test message
 2025-02-18 13:01 [ERROR] Something went wrong
 2025-02-18 13:01 [STOP] Logging Stopped.
+2025-03-12 13:25 [START] Logging Started.
+2025-03-12 13:25 [START] Driver program started.
+2025-03-12 13:25 [COMMAND] User entered 'key' command.
+2025-03-12 13:25 [ERROR] Unknown command 'key'.
+2025-03-12 13:26 [COMMAND] User entered 'password' command.
+2025-03-12 13:26 [RESULT] Password set successfully.
+2025-03-12 13:26 [COMMAND] User entered 'encrypt' command.
+2025-03-12 13:26 [RESULT] Encrypted 'Hello' to 'RIJVS'.
+2025-03-12 13:26 [COMMAND] User entered 'decrypt' command.
+2025-03-12 13:26 [RESULT] Decrypted 'RIJVS' to 'HELLO'.
+2025-03-12 13:26 [COMMAND] User entered 'history' command.
+2025-03-12 13:26 [COMMAND] Displayed command history.
+2025-03-12 13:27 [COMMAND] User entered 'quit' command.
+2025-03-12 13:27 [COMMAND] Sending QUIT to encryption program.
+2025-03-12 13:27 [COMMAND] Sending QUIT to logger.
+2025-03-12 13:27 [STOP] Logging Stopped.
+2025-03-12 13:29 [START] Logging Started.
+2025-03-12 13:29 [START] Driver program started.
+2025-03-12 13:29 [COMMAND] User entered 'encrypt' command.
+2025-03-12 13:30 [ERROR] ERROR: Password not set.
+2025-03-12 13:30 [STOP] Logging Stopped.

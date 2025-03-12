@@ -169,3 +169,7 @@ Check the assignment instructions and turn in the assignment
 
 
 ## Session Progress
+Created a readme file for the TA
+Final Test before submission to make sure nothing is broken
+
+### DONE!
